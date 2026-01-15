@@ -59,6 +59,20 @@ docker-compose up
    - `JWT_SECRET`: Your secret key for JWT tokens
 5. Deploy the service.
 
+#### GitHub Actions Deployment to Render
+
+The project includes a GitHub Actions workflow for automatic deployment to Render on pushes to the main branch.
+
+**Setup GitHub Secrets:**
+- Go to your GitHub repository settings
+- Navigate to Secrets and variables > Actions
+- Add a new repository secret named `RENDER_DEPLOY_HOOK`
+- Set the value to your Render deploy hook URL (found in your Render service settings under "Deploy Hook")
+
+**Triggering Deployment:**
+- Push changes to the `main` branch
+- The workflow will automatically run tests and trigger a deployment to Render
+
 ### Local Deployment
 
 1. Clone the repository.
@@ -66,13 +80,6 @@ docker-compose up
 3. Install dependencies: `npm install`
 4. Run the application: `npm start`
 5. Access the API at `http://localhost:3000`
-
-### GitHub Actions (Docker Hub)
-
-The project includes a GitHub Actions workflow for automatic deployment to Docker Hub on pushes to the main branch. Configure the following secrets in your GitHub repository:
-
-- `DOCKER_USERNAME`: Your Docker Hub username
-- `DOCKER_PASSWORD`: Your Docker Hub password
 
 ## Environment Variables
 
