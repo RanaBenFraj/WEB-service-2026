@@ -52,7 +52,7 @@ npm run dev
 
 ### Access the API
 
-Open your browser and navigate to:
+Open  browser and navigate to:
 ```
 http://localhost:3000/api-docs
 ```
@@ -118,7 +118,7 @@ The tests cover all API endpoints and ensure the application functions correctly
 
 Once deployed, access the API at:
 ```
-https://<your-app>.onrender.com/api-docs
+https://web-service-2026.onrender.com
 ```
 
 ## CI/CD with GitHub Actions
@@ -140,7 +140,7 @@ The project includes automated CI/CD using GitHub Actions for seamless deploymen
 Add the following secret to the GitHub repository:
 
 ```bash
-RENDER_DEPLOY_HOOK=<your-render-webhook-url>
+RENDER_DEPLOY_HOOK=<https://web-service-2026.onrender.com>
 ```
 
 ## API Documentation
