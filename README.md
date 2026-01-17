@@ -92,12 +92,8 @@ The tests cover all API endpoints and ensure the application functions correctly
 ### Steps
 
 1. **Push code to GitHub**
-   - Ensure all code is committed and pushed to your GitHub repository
 
 2. **Create a Web Service on Render**
-   - Go to [Render Dashboard](https://dashboard.render.com)
-   - Click "New" and select "Web Service"
-   - Connect your GitHub repository
 
 3. **Configure Build Settings**
    - **Build Command**:
@@ -120,7 +116,7 @@ The tests cover all API endpoints and ensure the application functions correctly
 
 ### Access API
 
-Once deployed, access your API at:
+Once deployed, access the API at:
 ```
 https://<your-app>.onrender.com/api-docs
 ```
@@ -141,18 +137,11 @@ The project includes automated CI/CD using GitHub Actions for seamless deploymen
 
 ### Setup GitHub Secret
 
-Add the following secret to your GitHub repository:
+Add the following secret to the GitHub repository:
 
 ```bash
 RENDER_DEPLOY_HOOK=<your-render-webhook-url>
 ```
-
-**Steps to add the secret:**
-1. Go to your GitHub repository
-2. Navigate to Settings > Secrets and variables > Actions
-3. Click "New repository secret"
-4. Name: `RENDER_DEPLOY_HOOK`
-5. Value: Your Render deploy hook URL (found in Render service settings)
 
 ## API Documentation
 
@@ -166,8 +155,8 @@ POST /api/users/register
 Content-Type: application/json
 
 {
-  "username": "johndoe",
-  "email": "john@example.com",
+  "username": "Hadil",
+  "email": "Hadil@example.com",
   "password": "securepassword"
 }
 ```
@@ -178,7 +167,7 @@ POST /api/users/login
 Content-Type: application/json
 
 {
-  "email": "john@example.com",
+  "email": "Hadil@example.com",
   "password": "securepassword"
 }
 ```
